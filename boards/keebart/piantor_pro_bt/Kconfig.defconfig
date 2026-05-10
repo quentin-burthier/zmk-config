@@ -38,4 +38,9 @@ config I2C
 config ZMK_MAX17048
     default y
 
+config BOARD_ENABLE_DCDC
+	bool "Enable DCDC mode"
+	select SOC_DCDC_NRF52X
+	default y
+
 endif # BOARD_PIANTOR_PRO_BT_LEFT || BOARD_PIANTOR_PRO_BT_RIGHT
